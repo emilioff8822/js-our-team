@@ -1,12 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  
+
 body {
   display: flex;
   justify-content: center;
 }
 
 #team-container {
+  margin-top: 200px;
   width: 70%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
+.member-card {
+  width : calc(33%);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.member-card p {
+  margin: 0;
+  padding: 0;
+}
+
+.member-card img {
+  width:300px;
+  height: auto;
+}

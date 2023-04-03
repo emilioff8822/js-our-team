@@ -30,7 +30,61 @@ const team = [
     ruolo: "graphic designer",
     immagine: "barbara-ramos-graphic-designer.jpg"
   }
-];
+]
+
+//bonus
+
+const teamContainer = document.getElementById("team-container");
+
+  // creo di un elemento <div> per la card del membro e aggiungo la classe 'member-card'
+
+for (let member of team) {
+  const memberCard = document.createElement("div");
+  memberCard.classList.add("member-card");
+  
+
+
+  // creo degli elementi <p>  e img
+
+  const memberName = document.createElement ("p");
+  const memberRole = document.createElement ("p");
+  const memberImage = document.createElement ("img");
+
+  // inserisco al loro interno i dati dell'array team
+
+  memberName.innerHTML= 'Nome: ' + member.nome ;
+  memberRole.innerHTML= 'Ruolo: ' + member.ruolo;
+  memberImage.src = 'img/' + member.immagine;
+
+//aggiungo p e img alla card del membro
+
+memberCard.appendChild(memberName);
+memberCard.appendChild(memberRole);
+memberCard.appendChild(memberImage);
+
+  // Aggiungo della card del membro al container nel DOM
+
+  teamContainer.appendChild(memberCard);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 // MILESTONE 1: Stampa su console delle informazioni di nome, ruolo e foto
 
@@ -53,3 +107,10 @@ for (let member of team) {
 teamContainer.appendChild((memberInfo));
 
 }
+
+
+
+*/
+
+
+
