@@ -62,7 +62,7 @@ memberCard.appendChild(memberImage);
 memberCard.appendChild(memberName);
 memberCard.appendChild(memberRole);
 
-  // Aggiungo della card del membro al container nel DOM
+  // Aggiungo la card del membro al container nel DOM
 
   teamContainer.appendChild(memberCard);
 
