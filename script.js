@@ -48,7 +48,7 @@ const teamContainer = document.getElementById("team-container");
 for (let member of team) {
 
   const memberInfo = document.createElement("p");
-  memberInfo.innerHTML = ' Nome :' + member.nome + ', Ruolo :' + member.ruolo + 'Immagine : <img src"' +member.immagine + '"alt"' +member.nome +'">';
+  memberInfo.innerHTML = ' Nome :' + member.nome + ', Ruolo :' + member.ruolo + ' , Immagine : <img src"' +member.immagine + '"alt"' +member.nome +'">';
 
 teamContainer.appendChild((memberInfo));
 
