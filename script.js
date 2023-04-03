@@ -58,9 +58,9 @@ for (let member of team) {
 
 //aggiungo p e img alla card del membro
 
+memberCard.appendChild(memberImage);
 memberCard.appendChild(memberName);
 memberCard.appendChild(memberRole);
-memberCard.appendChild(memberImage);
 
   // Aggiungo della card del membro al container nel DOM
 
